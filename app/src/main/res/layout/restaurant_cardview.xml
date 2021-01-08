@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_cardview_id"
+    android:layout_width="300dp"
+    android:paddingHorizontal="16dp"
+    android:layout_height="172dp"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    cardview:cardCornerRadius="4dp"
+    cardview:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+      >
+
+        <ImageView
+            android:id="@+id/restImage"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_restaurant_24" />
+
+        <TextView
+            android:id="@+id/restName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/restImage"
+            android:padding="2dp"
+            android:text="Restaurant Name"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/searchArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/restImage"
+            android:layout_alignTop="@id/restName"
+            android:layout_marginTop="32dp"
+            android:padding="4dp"
+            android:text="Area"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timings_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/restImage"
+            android:layout_alignTop="@id/restName"
+            android:layout_marginTop="62dp"
+            android:padding="4dp"
+            android:text="Timings"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/ratings_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/restImage"
+            android:layout_alignTop="@id/restName"
+            android:layout_marginTop="92dp"
+            android:padding="4dp"
+            android:text="Ratings"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/search_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-115dp"
+            android:layout_marginBottom="31dp"
+            android:layout_toStartOf="@id/searchArea" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
